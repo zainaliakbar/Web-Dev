@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+h2{
+    text-align: center;
+    font-size-adjust: calc(0.8);
+}
+
+iframe {
+  display: block;       /* makes it behave like a block element */
+  margin: 10px auto;    /* centers it horizontally */
+  width: 70%;           /* change size as you like (percentages or px) */
+  max-width: 800px;     /* keeps it from getting too huge on big screens */
+  aspect-ratio: 16 / 9; /* keeps video ratio correct */         /* removes border */
+}
+
+
+.heading{
+    color: white;
+    text-align: center;
+    font-size-adjust: calc(1.0);
+}
+.ip17{
+    background-color: black;
+    color: #FF9500;
+    margin-bottom: 2;
+    
+}
+.ip16{
+    color: #00bbff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.ip15{
+    color: #de06bd;
+    margin-top: 0;
+    margin-bottom: 0;
+}
