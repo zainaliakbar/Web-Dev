@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: lightpink;
+        }
+
+        /* Child selector */
+        div > p{
+            background-color: lightgreen;
+        }
+
+        /* Descendant Selector: now whether theres a span in div in which pra, it will still work on para */
+        div p{
+            background-color: lightblue;
+        }
+
+        /* Universal Selector: for all */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:hover{
+            background-color: violet;
+            color: white;
+        }
+
+
+        a{
+            color: black;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>I am a div</div>
+
+    <div>
+        <p>I am a para in a div</p>
+    </div>
+
+    <div>
+        <span>
+            <para>I'm a para in a span in a div</para>
+        </span>
+    </div>
+    <a href="http://www.google.com">Google</a>
+</body>
+</html>
