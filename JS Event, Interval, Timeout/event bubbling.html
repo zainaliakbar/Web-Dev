@@ -4,14 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Bubbling</title>
+    <style>
+        .container{    
+            background-color: lightblue;
+            justify-content: center;
+            align-items: center;
+            border: .5px solid black;
+            padding: 34px;
+            cursor: pointer;
+        }
+        .childcontainer{
+            background-color: lightgreen;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            border: .5px solid black;
+            padding: 34px;
+        }
+        .child{
+            background-color: coral;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 0.5px solid black;
+            padding: 34px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <span class="childcontainer">
+        <div class="childcontainer">
             <div class="child">
                 I am a child 
             </div>
         </span>
     </div>
+<!-- event.propogation stops event bubbling -->
+    <script>
+        document.querySelector('.child').addEventListener('click', function(){
+            event.stopPropagation();
+            alert('child is clicked');
+        });
+
+        document.querySelector('.childcontainer').addEventListener('click', function(){
+            event.stopPropagation();
+            alert('child container is clicked');
+        });
+
+        document.querySelector('.container').addEventListener('click', function(){
+            alert('container is clicked');
+        });
+
+
+        setInterval(() => {
+            document.querySelector('.child').style.backgroundColor = "red";
+        }, 3000); // after every 3 seconds
+    </script>
 </body>
 </html>
