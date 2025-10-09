@@ -23,6 +23,12 @@
             "name": "http://127.0.0.1:3000/JS Event, Interval, Timeout/event bubbling.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/JS Event, Interval, Timeout/event bubbling.html"
+        },
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/Bootstrap/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/Bootstrap/index.html"
         }
     ]
 }
